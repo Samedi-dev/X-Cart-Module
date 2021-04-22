@@ -1,0 +1,11 @@
+version: 5.4.0.0
+type: common
+authorName: 'Samedi DEV'
+moduleName: 'Advanced notice product'
+description: 'Модуль позволяющий добавить блок рецензий от известных источников для продукта'
+minorRequiredCoreVersion: 0
+dependsOn: {  }
+incompatibleWith: {  }
+skins: {  }
+showSettingsForm: false
+canDisable: true

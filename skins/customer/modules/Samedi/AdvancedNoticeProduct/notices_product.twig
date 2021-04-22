@@ -1,0 +1,25 @@
+<div class="quotes_container">
+    {% if this.getData() %}
+    <h3>Quotes</h3>
+    {% for item in this.getData() %}
+    <div class="quote">
+        <span class="quote_new">"{{ item.text|e }}"</span>
+        <span class="quote">{{ item.rating|e }} - <a href="{{ item.link|e }}" target="_blank"><b>{{ item.author|e }}</b></a></span>
+        <div class="space"></div>
+    </div>
+    {% endfor %}
+    {% endif %}
+</div>
+
+
+<style>
+    .space {
+        margin-top: 5px;
+    }
+    .quote {
+        display: block;
+    }
+    .quote_new {
+        font-style: italic;
+    }
+</style>
